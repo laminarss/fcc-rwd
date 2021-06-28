@@ -1,0 +1,81 @@
+* {
+   margin: 0;
+   margin-bottom: 3px;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+:root {
+   --color: #def;
+   --bg-color: rgba(26, 60, 94, 0.863);
+   --bg-color-form: rgba(14, 28, 43, 0.836);
+   --bg-color-option: #333;
+   --btn-color: rgba(57, 201, 88, 0.836);
+}
+
+body {
+   color: var(--color);
+   background: var(--bg-color);
+   font-size: 1.1em;
+}
+
+#main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 3em auto;
+}
+
+#description {
+   margin-top: 5px;
+   font-style: italic;
+}
+
+#survey-form {
+   display: flex;
+   flex-direction: column;
+   width: 500px;
+   margin-top: 15px;
+   padding: 30px;
+   border-radius: 5px;
+   background: var(--bg-color-form);
+}
+
+.form-group {
+   display: flex;
+   flex-direction: column;
+   margin: 6px;
+}
+
+.form-group label:first-child {
+   margin-bottom: 6px;
+}
+
+.form-group input, #dropdown, #text-area, #submit {
+   min-height: 30px;
+   font-size: 0.95em;
+   padding: 10px;
+   border: none;
+   border-radius: 3px;
+}
+
+.radio label, .check-box label {
+   display: flex;
+   align-items: center;
+}
+
+.radio label input, .check-box label input {
+   margin-right: 6px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+   min-height: 20px;
+   min-width: 20px;
+}
+
+#submit {
+   color: var(--color);
+   background: var(--btn-color);
+   margin: 6px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="style.css">
+
+   <title>Survey Form</title>
+</head>
+<body>
+   <div id="main">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for taking the time to fill out the form</p>
+      <form action="#" id="survey-form">
+         <div class="form-group">
+            <label for="name" id="name-label">Name
+            </label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+         </div>
+
+         <div class="form-group">
+            <label for="email" id="email-label">Email
+            </label>
+            <input type="email" id="email" pattern="\w{3,}@[a-zA-Z]{3,}\.[a-zA-Z]{2,}" placeholder="Enter your email"
+               required>
+         </div>
+
+         <div class="form-group">
+            <label for="number" id="number-label">Age <small>(optional)</small>
+            </label>
+            <input type="number" id="number" min=12 max=60 placeholder="Age" />
+         </div>
+
+         <div class="form-group">
+            <label for="dropdown">When do you usually go for a walk?
+            </label>
+            <select id="dropdown" value="">
+               <option value="unselected">--select--
+               </option>
+               <option value="always">Morning
+               </option>
+               <option value="sometimes">Evening
+               </option>
+               <option value="never">Never
+               </option>
+            </select>
+         </div>
+
+         <div class="form-group radio">
+            <label>
+               Gender
+            </label>
+            <label>
+               <input type="radio" name="gender" value="male"> Male
+            </label>
+            <label>
+               <input type="radio" name="gender" value="female"> Female
+            </label>
+            <label>
+               <input type="radio" name="gender" value="other"> Prefer not to say
+            </label>
+         </div>
+
+         <div class="form-group check-box">
+            <label>
+               Hobbies
+            </label>
+            <label for="check-box1">
+               <input type="checkbox" id="check-box1" value="cat"> Play sports
+            </label>
+            <label for="check-box2">
+               <input type="checkbox" id="check-box2" value="dog"> Listen to music
+            </label>
+            <label for="check-box3">
+               <input type="checkbox" id="check-box3" value="other"> Read books
+            </label>
+         </div>
+
+         <div class="form-group">
+            <label for="text-area">Suggestions</label>
+            <textarea id="text-area" rows="5" placeholder="Enter your comment here..."></textarea>
+         </div>
+
+         <input type="submit" id="submit" value="Submit">
+      </form>
+   </div>
+</body>
+</html>
